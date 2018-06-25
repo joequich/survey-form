@@ -1,0 +1,81 @@
+html,body{
+    background: #44E23F;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+
+main{
+
+}
+
+#title{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}
+
+
+#container{
+    width: 75%;
+    border: 0px solid;
+    border-radius: 6px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+
+
+#form-container{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+#labels{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#forms{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#forms > input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+@media (min-width: 600px) {
+    #form-container{
+        display: grid;
+    	grid-template-columns: 1fr 1fr;
+    	grid-gap: 10px;
+    }
+
+    #labels{
+    	display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
+    }
+
+    #forms{
+        display: flex;
+    	justify-content: flex-start;
+    	align-items: center;
+    }
+}
