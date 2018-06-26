@@ -12,29 +12,89 @@
         <h1 id="title">Survey Form</h1>
         <div id="container">
             <p id="description">Let us know how we can improve freeCodeCamp<p>
-            <form id="form-container">
+            <form id="survey-form">
+            <div id="container-form">
             <div id="labels">
-            <label for= "name"> * Name: </label>
+            <label for= "name" id="name-label"> * Name: </label>
             </div>
             <div id="forms">
-            <input type= "text" id= "name" name= "name" placeholder="Enter your name">
+            <input type= "text" id="name" name= "name" placeholder="Enter your name">
             </div>
             <div id="labels">
-            <label for= "email"> * Email: </label>
+            <label for= "email" id="email-label"> * Email: </label>
             </div>
             <div id="forms">
             <input type= "email" id= "email" name= "email" placeholder="Enter your email">
             </div>
             <div id="labels">
-            <label for= "age"> * Age: </label>
+            <label for= "age" id="number-label"> * Age: </label>
             </div>
             <div id="forms">
-            <input type= "number" id= "age" name= "age" placeholder="Enter your age">
+            <input type= "number" id= "number" name= "age" min="1" max="130"
+            placeholder="Enter your age">
             </div>
+            <div id="labels">
+            <label for= "role"> Which option best describes your current role?: </label>
+            </div>
+            <div id="forms">
+                <select  id="dropdown" >
+                  <option value="student">Student</option>
+                  <option value="fulljob">Full Time Job</option>
+                  <option value="fulllearn">Full Time Learner</option>
+                  <option value="notsay">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="labels">
+            <label for= "likely">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div id="forms">
+                <ul id="list">
+                <li><label><input type="radio" name="likely" value="definitely" checked>Definitely</label></li>
+                <li><label><input type="radio" name="likely" value="maybe">Maybe</label></li>
+                <li><label><input type="radio" name="likely" value="notsure">Not sure</label></li>
+                </ul>
+            </div>
+            <div id="labels">
+            <label for= "like"> What do you like most in FCC: </label>
+            </div>
+            <div id="forms">
+                <select  id="dropdown" >
+                  <option name="like" value="challenges">Challenges</option>
+                  <option name="like" value="projects">Projects</option>
+                  <option name="like" value="community">Community</option>
+                  <option name="like" value="open source">Open Source</option>
+                </select>
+            </div>
+            <div id="labels">
+            <label for= "things"> Things that should be improved in the future
+(Check all that apply): </label>
+            </div>
+            <div id="forms" >
+            <ul id="list">
+              <li><label><input name="thing" value="1" type="checkbox" >Front-end Projects</label></li>
+              <li><label><input name="thing" value="2" type="checkbox">Back-end Projects</label></li>
+              <li><label><input name="thing" value="3" type="checkbox" >Data Visualization</label></li>
+              <li><label><input name="thing" value="4" type="checkbox" >Challenges</label></li>
+              <li><label><input name="thing" value="5" type="checkbox" >Open Source Community</label></li>
+              <li><label><input name="thing" value="6" type="checkbox" >Gitter help rooms</label></li>
+              <li><label><input name="thing" value="7" type="checkbox" >Videos</label></li>
+              <li><label><input name="thing" value="8" type="checkbox" >City Meetups</label></li>
+              <li><label><input name="thing" value="9" type="checkbox" >Wiki</label></li>
+              <li><label><input name="thing" value="10" type="checkbox" >Forum</label></li>
+              <li><label><input name="thing" value="10" type="checkbox" >Additional Courses</label></li>
+            </ul>
+            </div>
+            <div id="labels">
+            <label for= "comments"> Any Comments or Suggestions? </label>
+            </div>
+            <div id="forms">
+            <textarea name="message" rows="7" cols="50" placeholder="Enter your comment here..."></textarea>
+            </div>
+            </div>
+            <input id ="submit" type="submit" value="Enviar">
             </form>
         </div>
-
-
     </main>
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
