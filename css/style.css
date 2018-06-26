@@ -15,7 +15,7 @@ html,body{
     width: 75%;
     border: 0px solid;
     border-radius: 6px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
     background: white;
 }
@@ -30,25 +30,27 @@ html,body{
   display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
+    margin: 0 auto;
 }
 
 /*form labels*/
-#labels{
+.labels{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+
     /*background-color: blue;*/
 }
 
 /*form */
-#forms{
+.forms{
   display: flex;
 	justify-content: space-around;
 	align-items: center;
     /*background-color: red;*/
 }
 
-#forms > input{
+.forms > input{
     width: 70%;
     padding: 10px 10px;
     margin: 8px 0;
@@ -78,7 +80,7 @@ html,body{
     	grid-gap: 10px;
     }
 
-    #labels{
+    .labels{
     	display: flex;
     	justify-content: flex-end;
     	align-items: flex-start;
@@ -86,7 +88,7 @@ html,body{
         /*background-color: blue;*/
     }
 
-    #forms{
+    .forms{
         display: flex;
     	justify-content:  flex-start;
     	align-items:  flex-end;
@@ -95,19 +97,20 @@ html,body{
     }
 }
 
-#list{
+.list{
     list-style: none;
 }
 
 #submit{
-    background-color: #26D85C;
+    background-color: #309DE2;
     width: 15%;
     padding: 10px 5px;
     font-size: 0.8em;
     display: block;
-    border: 1px solid #757675;
+    border: 1px solid white;
     border-radius: 4px;
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 20px;
+    color: white;
 }
